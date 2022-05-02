@@ -10,23 +10,19 @@
                 :body="post.body"
                 :key="post.id"
             />
-            <FeedbackForm />
+            
         </div>
     </div>
-
-    
 </template>
 
 <script>
     import Spin from "../components/Spin";
     import axios from 'axios';
     import Post from "../components/Blog/Post";
-    import FeedbackForm from "../components/FeedbackForm";
     export default {
         components: {
             Spin,
-            Post,
-            FeedbackForm
+            Post
         },
         data: () => ({
             loading: true,
